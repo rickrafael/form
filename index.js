@@ -32,19 +32,19 @@ form.addEventListener("submit", function (ev) {
   //Alert final
   alert(
     "Pedido Realizado !\n" +
-      "\nNome do Cliente :" +
+      "\nNome do Cliente : " +
       fullName +
       "\nEndereço do Cliente :" +
       adress +
       "\nTelefone do Cliente :" +
       phone +
-      "\nTipo de Massa :" +
+      "\nTipo de Massa : " +
       massType +
-      "\nTipo de Borda:" +
+      "\nTipo de Borda: " +
       border +
-      "\nSabor :" +
+      "\nSabor : " +
       flavors +
-      "\nObservações :" +
+      "\nObservações : " +
       observations
   );
 
