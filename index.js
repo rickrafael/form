@@ -34,13 +34,13 @@ form.addEventListener("submit", function (ev) {
     "Pedido Realizado !\n" +
       "\nNome do Cliente : " +
       fullName +
-      "\nEndereço do Cliente :" +
+      "\nEndereço do Cliente : " +
       adress +
-      "\nTelefone do Cliente :" +
+      "\nTelefone do Cliente : " +
       phone +
       "\nTipo de Massa : " +
       massType +
-      "\nTipo de Borda: " +
+      "\nTipo de Borda : " +
       border +
       "\nSabor : " +
       flavors +
