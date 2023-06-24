@@ -52,8 +52,6 @@ form.addEventListener("submit", function (ev) {
   document.querySelector("input[name='name']").value = "";
   document.querySelector("input[name='adress']").value = "";
   document.querySelector("input[name='phone']").value = "";
-  document.querySelector("select[name='massType']").value = "";
-  document.querySelector("select[name='borda']").value = "";
   document.querySelector("input[name='main']:checked").value = "";
   document.querySelector("textarea[name='observations']").value = "";
 });
