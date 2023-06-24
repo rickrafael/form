@@ -25,7 +25,7 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="style.css" />
-    <script src="index.js"></script>
+    <script src="index.js" defer></script>
   </head>
   <body>
     <!--Titulo principal-->
@@ -67,7 +67,7 @@
         <label for="phone" id="phone">Telefone de Contato :</label>
 
         <input
-          type="number"
+          type="text"
           name="phone"
           id="phone"
           placeholder="Informe seu telefone"
@@ -76,9 +76,8 @@
         <br /><br />
 
         <!--label de tipos de massa-->
-        <label for="massType" id="mass">Tipos de Massa :</label>
-        <br />
-        <br />
+        <label for="massType" id="massType">Tipos de Massa :</label>
+
         <!--campo select para tipos de massa-->
         <select name="massType" id="massType" required>
           <option selected disabled>Selecione um Tipo de Massa</option>
@@ -92,8 +91,7 @@
 
         <!--label de tipos de borda-->
         <label for="borda">Tipos de Borda</label>
-        <br />
-        <br />
+
         <!--campo select para tipos de borda-->
         <select name="borda" id="borda" required>
           <option selected disabled>Selecione uma borda</option>
@@ -104,6 +102,7 @@
         </select>
         <br /><br />
 
+        <!--label para recheios-->
         <label for="main" id="recheios">Recheios</label>
         <br />
         <input type="radio" name="main" id="main1" value="frango" />
@@ -143,17 +142,20 @@
         <label for="main9">Banana c/ Leite Condensado</label>
 
         <br />
+        <div class="observations">
+          <label for="observations" id="observations">Observações</label>
+          <br />
+          <br />
+          <textarea
+            name="observations"
+            id="observations"
+            cols="30"
+            rows="10"
+            placeholder="Observações..."
+          ></textarea>
+        </div>
 
-        <label for="observations" id="observations">Observações</label>
-        <br />
-        <br />
-        <textarea
-          name="observations"
-          id="observations"
-          cols="30"
-          rows="10"
-          placeholder="Observações..."
-        ></textarea>
+        <button type="submit">Finalizar Pedido</button>
       </form>
     </main>
     <hr />
